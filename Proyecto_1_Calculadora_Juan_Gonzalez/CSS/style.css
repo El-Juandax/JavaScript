@@ -1,0 +1,70 @@
+*{
+    margin: 0;               /*LA MARGEN*/
+    padding: 0;              /*ES UN RELLENO AL REDEDOR DEL CONTENIDO*/
+    box-sizing: border-box;   /*LA CAJA DE LOS BOTONES*/
+    font-family: sans-serif;  /*MODIFICA LA FUENTE*/
+}
+
+body{
+    min-height: 100vh; /*VH indica medida en porcentaje, que se ajuste al 100% de la pantalla*/
+    background-color: rgb(0, 0, 0); /*color*/
+    display: flex; 
+    justify-content: center; /*justificar el contenido horizontal*/
+    align-items: center; /* justificar vertical*/
+    background-image: url("../Img/fondo.jpg");
+}
+
+.calculadora{ /*estilo marco*/
+    background-color: #2e3860; /*color de fondo*/
+    color: #e43847; /*color de la fuente*/
+    display: grid; /*distribuir en una cuadricula*/
+    grid-template-columns: repeat(4, 1fr); /*distribuir en 4 columnas*/
+    width: 350px; /*ancho*/
+    padding: 1rem; /*relleno*/
+    border-radius: 1rem; /*bordes circulares*/
+    gap: 0.5rem;  /*1rem=16px separacion de los elementos*/
+} 
+
+.pantalla{
+    grid-column: 1/5; /*desde que espacio hasta que espacio ocupa la pantalla*/
+    background-color: rgb(255, 255, 255); /*color pantalla*/
+    padding: 1rem;/*relleno*/
+    font-size: 3rem; /*tamaño fuente*/
+    text-align: right; /*alinear los numeros en la pantalla a la derecha*/
+    border-radius: 0.5rem; /*borde circular*/
+    font-weight: 600; /*grosor de la fuente*/
+    margin-bottom: 1rem; /*margen de abajo separado*/
+}
+
+.boton{
+    background-color: rgb(133, 231, 255); /*color fondo*/
+    color: black;  /*color fuente*/
+    border: 0; /*borde sin borde*/
+    padding: 1rem; /*relleno*/
+    font-size: 1; /*tamaño fuente*/
+    display: flex; /**/
+    font-weight: 900;
+    justify-content: center; /*alinear el contenido al centro*/
+    align-items: center; 
+    border-radius: 0.8rem; /*redondear*/ 
+    cursor: pointer; /*manito del mouse*/
+}
+
+.boton:hover{
+    background-color: rgb(255, 238, 0);
+    color: black;  /*cuando el cursor pase sobre un boton*/
+}
+
+#cero{ /*asi se llama los ids*/
+    grid-column: span 2; /*expansion horizontal*/
+}
+
+#igual{
+    grid-row: span 2; /*expansion vertical*/
+    background-color: rgb(255, 238, 0);
+    color: black;
+}
+
+#igual:hover{
+    background-color: rgb(219, 0, 0);
+}
