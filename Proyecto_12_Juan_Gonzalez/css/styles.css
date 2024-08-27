@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.menuBarra{
+    width: 30px; /*ancho*/
+    height: 30px; /*alto*/
+    position: absolute; /*para moverlo*/
+    top: 50%; /*arriba*/
+    left: 50%; /*izquierda espacio*/
+    transform: translate(-50%, -50%) scale(4);/*centrarlo correctamente*/
+    cursor: pointer;
+}
+
+.menuBarra span{
+    display: block; /*me lo tome como bloque*/
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: rgb(255, 208, 0);
+    margin-top: 6px; /*margen arriba*/
+    transition: all 600ms; /*transicion*/
+    transform-origin: 0px 100%; /*desde el origen*/
+}
+
+#carne{
+    background-color: rgb(170, 67, 26);
+}
+
+.fila1Animacion{
+    transform: rotate(45deg)translate(-2px, 1px); 
+}
+
+.fila3Animacion{
+    transform: rotate(-45deg)translate(-4px, 2px);
+}
+
+.fila2Animacion{
+    margin-left: -35px;
+    opacity: 0;
+}
+

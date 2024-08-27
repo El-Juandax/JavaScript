@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(25, 153, 228);
+}
+
+.titulo{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.icono{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.eventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    margin-top: 25px;
+    width: 350px;
+    height: 200px;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px aqua;
+}
+
+.formulario input{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nombreEvento{
+    text-indent: 10px;
+    width: 275px;
+    height: 35px;
+    background-color: azure;
+    border-radius: 10px;
+    border-color:  rgb(25, 153, 228);
+    border-style: solid;
+}
+
+#fechaEvento{
+    padding: 10px;
+    justify-content: space-between;
+    width: 275px;
+    height: 35px;
+    background-color: azure;
+    border-radius: 10px;
+    border-color:  rgb(25, 153, 228);
+    border-style: solid;
+}
+
+#agregar{
+    width: 275px;
+    height: 50px;
+    background-color: rgb(25, 153, 228);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.listaEventos2{
+    align-items: 50%;
+    justify-content: 50%;
+    height: auto;
+    width: 700px;
+    border-radius: 20px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+    border-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 5px 2px aqua;
+}
+
+.evento{
+    align-items: center;
+    display: flex;
+    margin: 10px 10px;
+    height: auto;
+    width: auto;
+    border-color: aqua;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.dias{
+    margin-left: 10px;
+    text-align: center;
+    margin: 0px 20px;
+    width: 40px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.diasFaltantes{
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+}
+.texto{
+    font-size: 15px;
+}
+
+.nombreEvento{
+    margin-left: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 0px 30px;
+    font-size: 30px;
+    width: 200px;
+    height: auto;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fechaEvento{
+    padding: 30px;
+    text-align: center center;
+    margin: 0px 20px;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.eliminar{
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(19, 250, 19);
+}
+
+.eliminar:hover{
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.icono{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    min-height: 100vh;   /*ajustar la pantalla al maximo*/
+    min-width: 100vw; /*ajustar la pantalla al maximo este es con vw*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(42, 143, 22);
+}
+
+.pantalla{
+    user-select: none;  /*deshabilita la seleccion de los numeros del cronometro*/
+}
+
+.cronometro .pantalla{
+    height: 100px;
+    background: rgb(4, 221, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;           /*estilos de la pantalla donde aparecen los numeros*/
+    border-radius: 2rem;
+    box-shadow: 0px 0px 8px 5px aquamarine;
+    border: none;
+}
+
+.cronometro .pantalla span {
+    width: 100px;
+    text-align: center;
+    font-size: 50px;  /*estiilos numeros*/
+    font-weight: 550;
+    color: blue;
+}
+
+.pantalla span.separador{
+    width: 10px;   /*estilos separadores*/
+}
+
+.pantalla span.separador-mili,
+.pantalla span.milisegundo{
+    color: blueviolet;  /*estilos separador de los milisegundos y estos*/
+}
+
+.cronometro .botones{
+    text-align: center;   /* alinear botones */
+    margin-top: 30px;
+}
+
+.botones button{
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0px 10px;
+    color: rgb(0, 0, 0);
+    background-color: yellowgreen;   /*estilos botones*/
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    box-shadow: 3px 4px 3px 0px black;   /*sombra*/
+}
+
+.botones button.on{
+    pointer-events: none; /*boton desahibilitado*/
+    opacity: 0.7;    /*boton hundido*/
+}
+
+.cronometro span.separador-mili{
+    width: 15px;
+    margin-right: -8px;
+}
+
+.milisegundo, .segundo, .hora, .minuto{
+    margin-right: -11px;
+}

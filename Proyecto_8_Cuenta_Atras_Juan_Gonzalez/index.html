@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador navideño</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <div class="texto">
+        <div class="mensaje">Faltan:</div>
+    </div>
+
+    <div class="reloj">
+    <div id="dia" class="dia"></div>
+    <div id="hora" class="hora"></div>
+    <div id="minuto" class="minuto"></div>
+    <div id="segundo" class="segundo"></div>
+    </div>
+
+    <div class="letras">
+        <div class="letra">D</div>
+        <div class="letra">H</div>
+        <div class="letra">M</div>
+        <div class="letra">S</div>
+    </div>
+
+    <div class="papanoel">
+        <div id="papanoelquieto" class="papanoelOff">
+            <div class="papanoelOnOff"></div>
+        </div>
+    </div>
+    <div class="botones">
+        <button id="play" class="play" onclick="botonclick()">Play</button>
+        <button id="pause" class="pause" onclick="botonPclick()">Pause</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
