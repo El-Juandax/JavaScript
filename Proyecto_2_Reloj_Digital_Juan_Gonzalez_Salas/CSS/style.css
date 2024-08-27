@@ -1,0 +1,27 @@
+body{
+    margin: 0; /*margen*/
+    min-height: 100vh; /*se usa para ajustar la altura minima de un elemento*/
+    display: grid; /*Justificado mas sencillo*/
+    justify-content: center; /*Justificar el contenido vertical y horizontalmente*/
+    align-items: center; /*Justificar el contenido vertical y horizontalmente*/
+    background-color: white ; /*cambiar color del fondo*/
+    background-image: url('../img/foto1.jpg'); /*Imagen de fondo*/
+    background-repeat: no-repeat; /*Para que la imagen de fonfo no se repita*/
+    background-attachment: fixed; /*Para que la imagen de fonfo no pierda sus proporciones originales*/
+    background-size: cover; /*Para que la imagen de fondo cubra toda la pantalla*/
+    background-position: -70px -130px;   /*Ajustar posicion de la imagen de fonfo*/ 
+}
+
+.Reloj{ /*clase reloj*/
+    border: 1rem solid rgb(31, 227, 253); /*grosor del borde y color*/
+    width: 240px; /*Ancho*/
+    height: 240px; /*Alto*/
+    display: flex; /*Para que se ajuste*/
+    justify-content: center;
+    align-items: center; /*Justificar al centro*/
+    border-radius: 50vh; /*Convierte el cuadro en circulo*/
+    font-family: monospace; /*define la fuente y Da mas separacion entre los numeros*/
+    font-size: 3rem; /*Tamaño fuente*/
+    color: rgb(72, 84, 255); /*color de las cosas que tenga dentro el circulo*/
+    background-color: rgb(173, 255, 255);
+}
